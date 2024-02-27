@@ -1,0 +1,11 @@
+﻿@section Title {
+    Aggiungi Lavoro
+}
+
+<form asp-controller="Home" asp-action="Add" method="post">
+    Periodo:<input type="text" name="periodo" /> <br />
+    Pagamento:<input type="number" name="pagamento" /> <br />
+    Tipo:<input type="text" name="tipo" /> <br />
+
+    <button>Submit</button>
+</form>

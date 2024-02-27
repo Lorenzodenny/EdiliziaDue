@@ -1,0 +1,31 @@
+﻿@section Title{
+    lista lavori
+}
+
+<div class="tabella">
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Periodo</th>
+                <th>Pagamento</th>
+                <th>Tipo</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var lavoro in Model)
+            {
+                <tr>
+                    <td>@lavoro.LavoroId</td>
+                    <td>@lavoro.Periodo</td>
+                    <td>@lavoro.Pagamento</td>
+                    <td>@lavoro.Tipo</td>
+                    
+                    <td><a class="nav-link text-dark" asp-area="" asp-controller="Lavoro" asp-action="Details" asp-route-id="@lavoro.LavoroId">Dettagli</a></td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</div>
