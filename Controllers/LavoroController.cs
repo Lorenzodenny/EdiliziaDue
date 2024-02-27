@@ -35,6 +35,7 @@ namespace EdiliziaDue.Controllers
             return RedirectToAction("Details", new { id = lavoro.LavoroId });
         }
 
+       
 
 
 

@@ -40,5 +40,13 @@ namespace EdiliziaDue.Models
             _dipendenti.Add(dipendente);
             return dipendente;
         }
+
+        //public static Dipendente AggiungiDipendente(Dipendente dipendente)
+        //{
+        //    _maxId++;
+        //    dipendente.DipendenteId = _maxId;
+        //    _dipendenti.Add(dipendente);
+        //    return dipendente;
+        //}
     }
 }
